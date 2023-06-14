@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+</head>
+<body>
+
+    <center>
+    <h1>Digite Sol, Chuva ou Raio</h1>
+    <input type="text" id="clima">
+    <div id="pai"></div>
+    <br>
+    <br>
+    <button onclick="imagem()">ENVIAR</button>
+    </center>
+    <script>
+function imagem() {
+    let clima = document.getElementById('clima').value
+
+    switch (clima) {
+        case "sol":
+         var imagem = document.createElement("img")
+         imagem.src = 'sol.jpg'
+       
+
+        break;
+        case "chuva":
+         var imagem = document.createElement("img")
+         imagem.src = 'chuva.jpg'
+        
+        break;
+        case "raio":
+         var imagem = document.createElement("img")
+         imagem.src = 'raio.jpg'
+        break;
+    
+        default:
+            break;
+    }
+    let pai = document.getElementById('pai')
+        pai.appendChild(imagem)
+}
+
+    </script>
+    
+</body>
+</html>
