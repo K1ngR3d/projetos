@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucessor e Antecessor</title>
+</head>
+
+<body>
+    <h1>Insira um valor</h1>
+    <input type="text" id="n1"> 
+    <br>
+
+    <button onclick="antecessor()">Antecessor</button>
+    <button onclick="sucessor()">Sucessor</button>
+    <p id="ant">Antecessor:</p>
+    <p id="suc">Sucessor:</p>
+
+
+    <script>
+
+
+
+
+        function sucessor() {
+            var suc = document.getElementById("suc")
+            var num = document.getElementById("n1").value
+
+            n1 = Number(num) + 1
+            suc.innerText = n1
+
+        }
+
+        function antecessor() {
+            var ant = document.getElementById("ant")
+            var num = document.getElementById("n1").value
+
+            n1 = Number(num) - 1
+            ant.innerText = n1
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
