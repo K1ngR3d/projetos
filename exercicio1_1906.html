@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<body>
+    <h1>CALCULADORA DE MÉDIA</h1>
+    <P>PRIMEIRA NOTA</P>
+    <input type="text" id="n1">
+    <p>SEGUNDA NOTA</p>
+    <input type="text" id="n2">
+    <br>
+    <button onclick="sexo()">ENVIAR</button>
+    <br>
+    <br>
+    <p id="res">Resultado</p>
+
+    <script>
+
+        function sexo() {
+            var n1 = document.getElementById("n1").value
+            var n2 = document.getElementById("n2").value
+            var res = document.getElementById("res")
+
+            var calculo = (Number(n1) + Number(n2)) / 2
+
+
+            if (calculo >= 7) {
+                res.innerHTML = "APROVADO"
+            } else if (calculo <= 4) {
+                res.innerHTML = "REPROVADO"
+            } else if (calculo == 5, 6) {
+                res.innerHTML = "CONSELHO DE CLASSE"
+            } else {
+                res.innerHTML = "VALOR INVALIDO"
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
