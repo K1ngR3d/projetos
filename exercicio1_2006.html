@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSESSIONARIA</title>
+</head>
+
+<body>
+    <center>
+        <h1>ESCOLHA SEU CARRO</h1>
+        <p id="res">Preço</p>
+        <input type="text" id="carro">
+        <br>
+        <button onclick="robert()">ENVIAR</button>
+
+        <p>opções:</p>
+        <p>gol <br>
+            saveiro <br>
+            fiat toro <br>
+            susuki vitara <br>
+            corolla </p>
+    </center>
+
+    <script>
+        function robert() {
+
+            var carro = document.getElementById("carro").value
+            var res = document.getElementById("res")
+
+            switch (carro) {
+                case "gol":
+                    res.innerHTML = "48.000,00"
+                    break;
+
+                case "saveiro":
+                    res.innerHTML = "56.500,00"
+                    break;
+
+                case "fiat toro":
+                    res.innerHTML = "87.390,00"
+                    break;
+                
+                case "susuki vitara":
+                    res.innerHTML = "169.880,00"
+                    break;
+
+                case "corolla":
+                    res.innerHTML = "77.360,00"
+                    break;
+
+                default:
+                    res.innerHTML = "VALOR INVALIDO"
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

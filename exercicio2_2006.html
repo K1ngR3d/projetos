@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORES</title>
+</head>
+
+<body>
+    <center>
+        <H1>COLORES >:D</H1>
+        <button onclick="cor('red')">VERMELHO</button>
+        <button onclick="cor('orange')">LARANJA</button>
+        <button onclick="cor('yellow')">AMARELO</button>
+        <button onclick="cor('green')">VERDE</button>
+        <button onclick="cor('blue')">AZUL</button>
+        <button onclick="cor('purple')">ROXO</button>   
+        <br>
+        <br>
+        <img src="ARCO_IRIS.png" width="500px" height="250px">
+    </center>
+
+    <script>
+        var body = document.getElementsByTagName("body")
+
+        function cor(color) {
+            
+            document.body.style.backgroundColor = color
+        }
+
+
+
+        
+    </script>
+
+</body>
+
+</html>
