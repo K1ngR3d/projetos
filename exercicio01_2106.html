@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDADE</title>
+</head>
+
+<body>
+    <center>
+        <h1>QUANTO TEMPO VOCE VIVEU?</h1>
+
+        <p>ano em que voce nasceu:</p>
+        <input type="text" id="anoa">
+
+        <p>ano atual:</p>
+        <input type="text" id="anob">
+
+        <P>voce ja fez aniversario esse ano?</P>
+        <input type="text" id="niver">
+        <br>
+        <br>
+        <button onclick="idade()">ENVIAR</button>
+
+        <p id="res">resultado</p>
+    </center>
+
+    <script>
+
+
+
+        function idade() {
+            var res = document.getElementById("res")
+            var niver = document.getElementById("niver").value
+
+            var anoA = document.getElementById("anoa").value
+            var anoB = document.getElementById("anob").value
+
+            if(niver == "sim") {
+
+                var calculo = (Number(anoB) - Number(anoA)) 
+
+                res.innerHTML = calculo
+
+            } else {
+
+                var calculo = (Number(anoB) - Number(anoA))- 1
+
+                res.innerHTML = calculo
+
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>

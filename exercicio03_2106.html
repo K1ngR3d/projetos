@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Digite 1, 2, 3, 4, ou 5</h1>
+        <input type="text" id="mot">
+        <div id="pai"></div>
+        <br>
+        <br>
+        <button onclick="imagem()">ENVIAR</button>
+    </center>
+    <script>
+        function imagem() {
+            let mot = document.getElementById('mot').value
+
+            switch (mot) {
+                case "1":
+                    var imagem = document.createElement("img")
+                    imagem.src = '1.png'
+
+
+                    break;
+                case "2":
+                    var imagem = document.createElement("img")
+                    imagem.src = '2.png'
+
+                    break;
+                case "3":
+                    var imagem = document.createElement("img")
+                    imagem.src = '3.png'
+                    break;
+                case "4":
+                    var imagem = document.createElement("img")
+                    imagem.src = '4.png'
+                    break;
+                case "5":
+                    var imagem = document.createElement("img")
+                    imagem.src = '5.png'
+                    break;
+                default:
+                    break;
+            }
+            let pai = document.getElementById('pai')
+            pai.appendChild(imagem)
+        }
+
+    </script>
+
+</body>
+
+</html>
