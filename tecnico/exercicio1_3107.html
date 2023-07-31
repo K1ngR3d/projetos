@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTADOR</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>ESCOLHA UM VALOR FINAL E UM VALOR DE VARIAÇÃO</h1>
+
+
+        <P>VALOR FINAL</P>
+        <input type="text" id="vf">
+
+        <p>VALOIR DE VARIAÇÃO</p>
+        <input type="text" id="multi">
+
+        <br>
+        <br>
+
+        <button onclick="vex()">ENVIAR</button>
+    </center>
+
+
+    <script>
+
+        function vex() {
+
+            var vf = document.getElementById("vf").value
+            var multi = document.getElementById("multi").value
+            contador=0
+
+            while (contador <= Number(vf)) {
+
+                console.log(contador)
+                contador = contador + Number(multi)
+
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
