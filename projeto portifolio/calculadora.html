@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora De Area</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+
+                    <a href="portifolio.html">
+                        <img id="logo" src="imagens/logo.jpg" alt="JobFinder">
+                    </a>
+
+                    <ul>
+                        <li><a href="tabuada.html">Tabuada</a></li>
+                        <li><a href="quadrado.html">Quadrado Animado</a></li>
+                        <li><a href="gay.html">Arco-Iris</a></li>
+                        <li><a href="calculadora.html">Calculadora De Area</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    </div>
+
+
+
+
+    <div id="calculadora">
+        <center>
+            <h1>CALCULADOR DE AREA</h1>
+
+            <P>BASE</P>
+            <input type="text" id="n1">
+
+            <P>ALTURA</P>
+            <input type="text" id="n2">
+            <br>
+            <button onclick="fnaf()">CALCULAR</button>
+<br>
+<br>
+            <p id="res">RESULTADO</p>
+        </center>
+    </div>
+
+    <script>
+        function fnaf() {
+            var n1 = document.getElementById("n1").value
+            var n2 = document.getElementById("n2").value
+            var res = document.getElementById("res")
+
+            var calculo = (Number(n1) * Number(n2)) / 2
+
+            res.innerHTML = calculo
+        }
+
+    </script>
+</body>
+
+</html>

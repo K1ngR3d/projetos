@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arco-Iris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+
+                    <a href="portifolio.html">
+                        <img id="logo" src="imagens/logo.jpg" alt="JobFinder">
+                    </a>
+
+                    <ul>
+                        <li><a href="tabuada.html">Tabuada</a></li>
+                        <li><a href="quadrado.html">Quadrado Animado</a></li>
+                        <li><a href="gay.html">Arco-Iris</a></li>
+                        <li><a href="calculadora.html">Calculadora De Area</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    </div>
+
+
+    <div id="gay">
+        <center>
+            <H1>COLORES >:D</H1>
+            <button onclick="cor('rgb(228, 3, 3)')">VERMELHO</button>
+            <button onclick="cor('rgb(255, 140, 0)')">LARANJA</button>
+            <button onclick="cor('rgb(255, 237, 0)')">AMARELO</button>
+            <button onclick="cor('rgb(0, 128, 38)')">VERDE</button>
+            <button onclick="cor('rgb(0, 77, 255 )')">AZUL</button>
+            <button onclick="cor('rgb(117, 7, 135)')">ROXO</button>
+            <br>
+            <br>
+            <img src="imagens/gay.jpg" width="500px" height="250px">
+        </center>
+
+        <script>
+            var body = document.getElementsByTagName("body")
+
+            function cor(color) {
+
+                document.body.style.backgroundColor = color
+            }
+
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>
